@@ -41,7 +41,7 @@ class Main {
       }
       //revealing word and checking for replay if no more tries
       if (wrongGuesses == 6){
-        System.out.println("Uh oh it seems that you have run out of tries. The word was " + goal + ".Good try though!! Would you like to play again?");
+        System.out.println("Uh oh it seems that you have run out of tries. The word was " + goal.toUpperCase() + ". Good try though!! Would you like to play again?");
       }
       String tryAgain = sc.next().toLowerCase();
       if (tryAgain.equals("no")){
@@ -59,9 +59,9 @@ class Main {
   //selecting a word based on selected difficulty 
   public static String wordSelector(int num){
     String word = "";
-    int x = (int)Math.random()*9;
+    int x = (int)(Math.random()*10);
     //3 sets of 10 words in increasing difficulty 
-    String[][] wordBank = {{"right", "roy", "toast", "craft", "fault", "cycle", "fossil", "float", "prince", "shout", "shelf" }, {"application", "continuous", "explicit", "aquarium", "entitlement", "momentum", "generation", "stimulation", "cylinder",   "explosion"}, {"apparatus", "ostracize", "ambiguous", "revolutionary", "negligence", "spontaneous", "reservoir", "rehabilitation", "consensus", "conglomerate"}};
+    String[][] wordBank = {{"right", "roy", "toast", "craft", "fault", "cycle", "fossil", "float", "prince", "shout", "shelf" }, {"application", "continuous", "explicit", "aquarium", "entitlement", "momentum", "generation", "stimulation", "cylinder",   "explosion", "directory"}, {"apparatus", "ostracize", "ambiguous", "revolutionary", "negligence", "spontaneous", "reservoir", "rehabilitation", "consensus", "conglomerate", "troglodyte"}};
     if (num == 1){
       word = wordBank[0][x];
     }
