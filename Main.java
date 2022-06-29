@@ -61,7 +61,7 @@ class Main {
     String word = "";
     int x = (int)Math.random()*9;
     //3 sets of 10 words in increasing difficulty 
-    String[][] wordBank = {{"right", "toast", "craft", "fault", "cycle", "fossil", "float", "prince", "shout", "shelf" }, {"application", "continuous", "explicit", "aquarium", "entitlement", "momentum", "generation", "stimulation", "cylinder",   "explosion"}, {"apparatus", "ostracize", "ambiguous", "revolutionary", "negligence", "spontaneous", "reservoir", "rehabilitation", "consensus", "conglomerate"}};
+    String[][] wordBank = {{"right", "roy", "toast", "craft", "fault", "cycle", "fossil", "float", "prince", "shout", "shelf" }, {"application", "continuous", "explicit", "aquarium", "entitlement", "momentum", "generation", "stimulation", "cylinder",   "explosion"}, {"apparatus", "ostracize", "ambiguous", "revolutionary", "negligence", "spontaneous", "reservoir", "rehabilitation", "consensus", "conglomerate"}};
     if (num == 1){
       word = wordBank[0][x];
     }
